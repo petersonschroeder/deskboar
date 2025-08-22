@@ -6,11 +6,18 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div >
-          <h1>Bem-vindo!</h1>
-          <p>Informações, imagem ou ilustração aqui.</p>
+        <div className="container2">
+        <div>
+          <img src="logo.jpg" alt=""  className="Asepag"/>
+          <h1 className="comentario"><b>sign in to</b></h1>
+          <h2>Loren ip is simply</h2>
+          <p>If you don’t have an account register You can   Register here !</p>
         </div>
-        <div className="direita" >
+      
+        <div><img src="boneco.png" alt="" className="boneco"/></div>
+        </div>
+ 
+      <div className="direita" >
           <Login />
         </div>
       </div>
@@ -19,3 +26,11 @@ function App() {
 }
 
 export default App
+
+/*
+ <div >
+          
+          <h1>Bem-vindo!</h1>
+          <p>Informações, imagem ou ilustração aqui.</p>
+          
+        </div> */

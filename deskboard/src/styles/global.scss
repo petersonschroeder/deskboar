@@ -115,10 +115,12 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-
+.container2 {
+display: grid;
+grid-template-columns: 60% 40%;}
 .container {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 70% 30% ;
 gap: 20px;
 height: 100vh
 }
@@ -130,11 +132,11 @@ form {
   background: #fff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
-  width: 350px;
- margin: 0 50px 0 0; 
- margin-left: 200px;
- margin-top: 20%;
+  box-shadow: 0px 1px 20px rgba(92, 93, 94, 0.788);
+  width: 300px;
+  margin: 0 50px 0 0; 
+  margin-left: 70px;
+  margin-top: 20%;
 }
 input {
   width: 100%;
@@ -186,4 +188,24 @@ form h2.sing {
 }
 .opcao{
   text-align: center;
+}
+.iconlog{
+  width: 60px;
+  right: 60px;
+}
+.divicons{
+  align-items: center !important;
+}
+.Asepag{
+  width: 100px;
+  right: 100px;
+  margin-top: 5%;
+  margin-left: -30%;
+  position: relative;
+}
+.boneco{
+  margin-top: 120%;
+}
+.comentario{
+  margin-top: 40%;
 }

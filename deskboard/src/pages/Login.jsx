@@ -28,9 +28,15 @@ export function Login(){
                     onChange={(e) => setSenha(e.target.value)}
                 />
                 <h3 className="SENHA" >Esqueceu sua senha?</h3>
+                <h2></h2>
                 <button type="submit" className="buttonlogin">Login</button>
-                <h2>  </h2>
+                <h2></h2>
                 <h3 className="opcao"> or continue with</h3>
+                <div className="opcao" >
+                    <img src="facebook.png" alt="#" className="iconlog"/>
+                    <img src="apple.png" alt="#" className="iconlog"/>
+                    <img src="google.png" alt="#" className="iconlog" />
+                </div>
             </form>
         </div>
     )
