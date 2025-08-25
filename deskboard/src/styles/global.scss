@@ -110,20 +110,15 @@
   }
   
 html, body {
-    height: 100%;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
     font-family: Arial, sans-serif;
 }
 
-.container2 {
-display: grid;
-grid-template-columns: 60% 40%;}
-.container {
-display: grid;
-grid-template-columns: 70% 30% ;
-gap: 20px;
-height: 100vh
-}
+
+
 
 form {
   display: flex;
@@ -196,16 +191,64 @@ form h2.sing {
 .divicons{
   align-items: center !important;
 }
-.Asepag{
+
+
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #fff;
+}
+.container {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+  max-width: none;
+
+  }
+
+
+.logo {
   width: 100px;
-  right: 100px;
-  margin-top: 5%;
-  margin-left: -30%;
-  position: relative;
+
 }
-.boneco{
-  margin-top: 120%;
+
+.titulo {
+  font-size: 2.5rem;
+  color: #1b1f24;
+ 
 }
-.comentario{
-  margin-top: 40%;
+
+.subtitulo {
+  font-size: 1.25rem;
+  color: #2c2f33;
+}
+
+.descricao {
+  margin-left: 20%S;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.ilustracao {
+  margin-left: 20%;
+  width: 220px;
+  margin-top: 20px;
+  margin-top: 50%;
+}
+
+.direita {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
