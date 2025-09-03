@@ -1,13 +1,14 @@
+import React from "react";
+import { Header } from "./Header"; 
+
 export function Deshboard() {
-    return (
-      <header className="headerr">
-       <nav>
-       <img src="logo.jpg" alt="Logo" className="logo" />
-        <form className="search-form">
-          <input type="text" placeholder="Pesquisar..." />
-        </form>
-       </nav>
-      </header>
-    )
-  }
-  
+  return (
+    <>
+    <Header />
+      
+      <main className="dashboard">
+        <h1>Bem-vindo ao Dashboard</h1>
+      </main>
+    </>
+  );
+}
