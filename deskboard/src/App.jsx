@@ -1,37 +1,21 @@
 import React from "react"
-import './styles/global.scss'
-import { Login } from "./pages/Login";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import "./styles/global.scss"
+import "./styles/Deshboard.scss"
+
+import { Login } from "./pages/Login"
+import {Deshboard}  from "./pages/Deshboard"
 
 function App() {
   return (
-    <div className="App">
-    <div className="container">
-      <div className="esquerda">
-        <img src="logo.jpg" alt="#" className="logo" />
-        <h1 className="titulo"><b>sign in to</b></h1>
-        <h2 className="subtitulo">Loren ip is simply</h2>
-        <p className="descricao">
-          If you don’t have an account register<br />
-          You can <a href="/register">Register here</a>!
-        </p>
-        
-      </div>
-
-      <div className="direita">
-      <img src="boneco.png" alt="#" className="ilustracao" />
-        <Login />
-      </div>
-    </div>
-  </div>
-);
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/deshboard" element={<Deshboard />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
-
-/*
- <div >
-          
-          <h1>Bem-vindo!</h1>
-          <p>Informações, imagem ou ilustração aqui.</p>
-          
-        </div> */
