@@ -1,0 +1,49 @@
+.sidebar {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 5px; 
+  }
+  
+  .cordobotao {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  .sidebar button {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    width: 100%;
+    background: none;
+    border: none;
+    color: #000; 
+    font-size: 14px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+  }
+  
+
+  .sidebar button:hover {
+    background-color: #ddd;
+  }
+  
+ 
+  .sidebar button:active,
+  .sidebar button:focus {
+    color: blue;
+    outline: none; 
+  }
+  
