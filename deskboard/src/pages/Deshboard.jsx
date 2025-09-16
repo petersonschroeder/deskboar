@@ -1,17 +1,22 @@
 import React from "react";
 import { Header } from "../components/Header"; 
 import { Sidebar } from "../components/sidebar";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Outlet } from "react-router-dom"; // 👈 Importante
 
- export function Deshboard() {
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Lista } from "../components/Lista";
+import { dmain} from "../components/Dmain"
+
+export function Deshboard() {
   return (
     <>
-    
-    <Header />
-    <Sidebar/>
+      <Sidebar />
+      <Header />
       
       <main className="dashboard">
-       </main>
+        <Outlet /> {<Lista/>}
+        
+      </main>
     </>
   );
 }
