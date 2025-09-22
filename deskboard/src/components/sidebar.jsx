@@ -11,10 +11,9 @@ export function Sidebar() {
     <div className="sidebar">
       <h2 className="cordobotao">Menu</h2>
 
-      <button onClick={() => navigate("dh")}>
-        <i className="bi bi-speedometer2"></i> Dashboard
-      </button>
-
+       <button onClick={() => navigate("/deshboard")}>
+      <i className="bi bi-speedometer2"></i> Dashboard
+    </button>
       <button onClick={() => navigate("lista")}>
         <i className="bi bi-box-seam"></i> Produtos
       </button>

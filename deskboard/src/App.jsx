@@ -5,7 +5,8 @@ import "./styles/Deshboard.scss";
 
 import { Login } from "./pages/Login";
 import { Deshboard } from "./pages/Deshboard";
-import { Lista } from "./components/Lista"; // ✅ Importar Lista
+import { Lista } from "./components/Lista";
+import { Painel } from "../src/components/Painel"
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
 
         {/* Rota pai */}
         <Route path="/deshboard" element={<Deshboard />}>
-          <Route index element={null} /> {/* ← mantém <main> vazio em /deshboard */}
-          <Route path="lista" element={<Lista />} /> {/* ✅ Rota filha */}
+          {/* ← Componente padrão ao acessar /deshboard */}
+          <Route index element={<Painel />} />  
+          {/* ← Rota filha: /deshboard/lista */}
+          <Route path="lista" element={<Lista />} />  
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,45 @@
+.painel-container {
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .descricao {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .painel-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.2s ease;
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

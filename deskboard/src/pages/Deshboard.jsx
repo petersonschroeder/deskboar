@@ -1,11 +1,11 @@
 import React from "react";
 import { Header } from "../components/Header"; 
 import { Sidebar } from "../components/sidebar";
-import { Outlet } from "react-router-dom"; // 👈 Importante
+import { Outlet } from "react-router-dom";
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Lista } from "../components/Lista";
-import { dmain} from "../components/Dmain"
+import { Painel } from "../components/Painel"; 
 
 export function Deshboard() {
   return (
@@ -14,8 +14,8 @@ export function Deshboard() {
       <Header />
       
       <main className="dashboard">
-        <Outlet /> {<Lista/>}
-        
+        <Outlet /> {/* Conteúdo das rotas aninhadas */}
+        <Painel/>  {/* Componente que aparece por padrão */}
       </main>
     </>
   );
